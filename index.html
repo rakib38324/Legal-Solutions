@@ -12,9 +12,9 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="max-w-screen-xl mx-auto">
+<body>
 
-  <header>
+  <header class="max-w-screen-xl mx-auto">
     <nav>
       <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -106,13 +106,28 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="bg-indigo-400 text-white p-4 font-semibold rounded-xl">Free Consultation</a>
+
+          <label for="my-modal-6" class="bg-indigo-400 text-white p-4 font-semibold rounded-xl cursor-pointer">Free
+            Consultation</label>
+
+
+          <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+          <div class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+              <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+              <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for
+                free!</p>
+              <div class="modal-action">
+                <label for="my-modal-6" class="bg-indigo-400 btn">OK</label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main class="max-w-screen-xl mx-auto">
 
     <!-- Banner -->
     <div class="m-2">
@@ -198,6 +213,55 @@
           repellendus non atque error obcaecati corrupti cumque quae, ducimus tenetur?</p>
       </div>
 
+      <div class="mt-10">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/slider-1.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <div class="text-white w-1/2 mx-auto">
+                <img class="w-1/6 mx-auto rounded-full" src="https://i.ibb.co/FBwXGv3/Male01.jpg" alt="Male01" />
+                <p class="text-xl font-bold text-white text-center">Nahid Arman</p>
+                <p class="text-lg  text-white text-center">Web Developer</p>
+                  <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, neque quibusdam quae reprehenderit sed ut excepturi ab perspiciatis soluta veniam unde necessitatibus reiciendis aspernatur. Accusamus necessitatibus voluptates eaque molestiae natus.</p>
+              </div>
+                
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/slider-2.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+
+              <div class="text-white w-1/2 mx-auto">
+                <img class="w-1/6 mx-auto rounded-full" src="https://i.ibb.co/FBwXGv3/Male01.jpg" alt="Male01" />
+                <p class="text-xl font-bold text-white text-center">Nahid Arman</p>
+                <p class="text-lg  text-white text-center">Web Developer</p>
+                  <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, neque quibusdam quae reprehenderit sed ut excepturi ab perspiciatis soluta veniam unde necessitatibus reiciendis aspernatur. Accusamus necessitatibus voluptates eaque molestiae natus.</p>
+              </div>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/slider-3.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <!-- details -->
+              <div class="text-white w-1/2 mx-auto">
+                <img class="w-1/6 mx-auto rounded-full" src="https://i.ibb.co/FBwXGv3/Male01.jpg" alt="Male01" />
+                <p class="text-xl font-bold text-white text-center">Nahid Arman</p>
+                <p class="text-lg  text-white text-center">Web Developer</p>
+                  <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, neque quibusdam quae reprehenderit sed ut excepturi ab perspiciatis soluta veniam unde necessitatibus reiciendis aspernatur. Accusamus necessitatibus voluptates eaque molestiae natus.</p>
+              </div>  
+
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
 
 
       <!-- QNA   -->
@@ -208,7 +272,7 @@
           repellendus non atque error obcaecati corrupti cumque quae, ducimus tenetur?</p>
       </div>
 
-      <div class="flex mt-10">
+      <div class="lg:flex mt-10">
         <div class="flex flex-col justify-center gap-2">
           <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div class="collapse-title text-xl font-medium bg-base-200">
@@ -267,7 +331,7 @@
             <p class="text-xl font-bold mt-3 text-center my-5">Address</p>
             <p class="text-center mb-5 w-1/2 mx-auto">A108 Adam Street, <br>
               New York, NY 535022</p>
-            
+
           </div>
 
           <div class="border-2 py-10 bg-base-200">
@@ -275,29 +339,29 @@
             <p class="text-xl font-bold mt-3 text-center my-5">Call Us</p>
             <p class="text-center mb-5 w-1/2 mx-auto">+88 01750 00 00 00 <br>
               +88 01750 00 00 00</p>
-          
+
           </div>
           <div class="border-2 py-10 bg-base-200">
             <img class="mx-auto" src="./images/email.png" alt="">
             <p class="text-xl font-bold mt-3 text-center my-5">Email Us</p>
             <p class="text-center mb-5 w-1/2 mx-auto">info@gmail.com <br>
               info@gmail.com</p>
-            
+
           </div>
           <div class="border-2 py-10 bg-base-200">
             <img class="mx-auto" src="./images/time.png" alt="time">
             <p class="text-xl font-bold mt-3 text-center my-5">Working Hours</p>
             <p class="text-center mb-5 w-1/2 mx-auto">Mon-Fri: 9AM to 5PM <br>
               Sunday: 9AM to 1 PM</p>
-            
+
           </div>
 
         </div>
         <div class="">
-          <div class="card-body p-0 ">
-            <div class="form-control" >
+          <div class="card-body p-0 mt-2 lg:mt-0">
+            <div class="form-control">
               <input type="text" placeholder="Your Name" class="input input-bordered rounded mb-10 " />
-          
+
               <input type="email" placeholder="Your Email" class="input input-bordered rounded mb-10 " />
               <input type="password" placeholder="password" class="input input-bordered rounded mb-10 " />
               <textarea class="textarea textarea-bordered rounded pb-20" placeholder="Your Messages"></textarea>
@@ -313,6 +377,48 @@
 
 
   </main>
+
+  <!-- <footer> -->
+  <footer class=" p-10 bg-black text-white ">
+    <div class="footer max-w-screen-xl mx-auto">
+      <div>
+        <span class="footer-title">Services</span>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </div>
+      <div>
+        <span class="footer-title">Company</span>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </div>
+      <div>
+        <span class="footer-title">Legal</span>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </div>
+      <div>
+        <span class="footer-title">Newsletter</span>
+        <div class="form-control w-80">
+          <label class="label">
+            <span class="label-text text-white">Enter your email address</span>
+          </label>
+          <div class="relative">
+            <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+            <p class="btn btn-primary absolute top-0 right-0 rounded-l-none">
+              <img src="./images/email.png" alt="">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
 
 
 </body>
